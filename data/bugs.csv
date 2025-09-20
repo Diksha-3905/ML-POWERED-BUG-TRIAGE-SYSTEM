@@ -1,0 +1,9 @@
+bug_id,title,description,assignee_team
+1,"Button color is wrong on login screen","The login button is supposed to be blue (#007bff) but it is showing as grey (#6c757d). This is happening on Chrome and Firefox.","UI Team"
+2,"API endpoint for user profile returns 500 error","When I call GET /api/v1/users/profile with a valid auth token, the server crashes and returns a 500 Internal Server Error. The logs show a null pointer exception in the UserProfileService.","Backend Team"
+3,"Slow query when fetching user dashboard","The main dashboard takes over 15 seconds to load for users with more than 1000 posts. The slow query seems to be a JOIN on the posts and comments tables.","Database Team"
+4,"Text overlaps on mobile view","On the main page, the header text is overlapping with the navigation bar on screens smaller than 400px wide. This is a CSS issue.","UI Team"
+5,"User authentication fails with special characters","If a user's password contains special characters like '&' or '#', the login process fails with an authentication error. The backend seems to be mishandling the input.","Backend Team"
+6,"Database connection pool is exhausted","During peak hours, we are seeing 'Too many connections' errors from the database. We need to increase the connection pool size or optimize connection usage.","Database Team"
+7. "Footer links are broken","All the links in the footer section of the website are leading to a 404 page. The href attributes seem to be incorrect.","UI Team"
+8,"Incorrect data calculation in monthly report","The financial report for the month is showing incorrect totals. The aggregation logic in the ReportGenerator service is likely flawed.","Backend Team"
